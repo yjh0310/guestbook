@@ -116,7 +116,7 @@ pipeline {
                 perfReport filterRegex: '', showTrendGraphs: true, sourceDataFiles: 'loadtest_result.jtl' 
             } 
         }
-    }W
+    }
     post { 
         always { 
             emailext (attachLog: true, body: '본문', compressLog: true
